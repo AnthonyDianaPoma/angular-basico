@@ -1,0 +1,18 @@
+<p>listado works!</p>
+
+<ul>
+  <li *ngFor="let heroe of heroes; let i = index">
+    {{ i }} {{ heroe }}
+  </li>
+</ul>
+
+<div>
+  <h3>Héroes moridos</h3>
+  <span *ngFor="let morido of mori2; let i = index">
+    {{ i }} {{ morido }} <br>
+  </span>
+</div>
+
+<br>
+
+<button (click) = 'borrarHeroe()'>Borrer Héroe</button>
